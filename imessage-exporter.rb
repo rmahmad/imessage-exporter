@@ -1,8 +1,8 @@
 require "sqlite3"
 require "find"
 
-if(ARGV.length == 0)
-  puts "Please specify one or more iMessage accounts whose conversations you would like to export"
+if(ARGV.length == 0 or ARGV[0] = "-h")
+  puts "Please specify one or more iMessage accounts whose conversations you would like to export. Note that this tool will only work with US phone numbers."
   exit
 end
 
